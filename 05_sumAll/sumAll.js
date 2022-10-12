@@ -1,6 +1,6 @@
 const sumAll = function(startNum, lastNum) {
-    returnSum
-    for (let i=startNum; i<=startNum+lastNum; i++){
+    let returnSum = 0
+    for (let i=startNum; i<startNum+lastNum; i++){
         returnSum+=i
     }
     return returnSum
