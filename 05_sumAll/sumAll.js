@@ -1,9 +1,8 @@
 const sumAll = function(startNum, lastNum) {
     let returnSum = 0
+    let smallNum = startNum
     if (startNum>lastNum){
-        let smallNum = lastNum
-    } else {
-        let smallNum = startNum
+        smallNum = lastNum;
     }
     for (let i=smallNum; i<startNum+lastNum; i++){
         returnSum+=i
