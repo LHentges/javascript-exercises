@@ -1,6 +1,10 @@
 const sumAll = function(startNum, lastNum) {
     let returnSum = 0
     let smallNum = startNum
+    if (startNum<0 || lastNum<0){
+        return "ERROR"
+    }
+
     if (startNum>lastNum){
         smallNum = lastNum;
     }
