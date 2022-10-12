@@ -4,7 +4,9 @@ const sumAll = function(startNum, lastNum) {
     if (startNum<0 || lastNum<0){
         return "ERROR"
     }
-
+    if (!Number.isInteger(startNum) || !Number.isInteger(lastNum)){
+        return "ERROR"
+    }
     if (startNum>lastNum){
         smallNum = lastNum;
     }
