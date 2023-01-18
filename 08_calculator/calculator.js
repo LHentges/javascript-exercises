@@ -13,16 +13,27 @@ const sum = function(array) {
   return totalSum
 }
 
-const multiply = function() {
+const multiply = function(array) {
+  let totalProduct = array.reduce(function(returnedValue, currentArrayValue){
+    let currentTotal = returnedValue*currentArrayValue
+    return currentTotal
+  }, 1)
+  return totalProduct
 
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+  return a ** b
 };
 
-const factorial = function() {
-	
+const factorial = function(factor) {
+  let total = 1
+  if (factor !== 0 && factor !== 1){
+    for (let i = 2; i<=factor; i++){
+      total*=i
+    }
+  }
+  return total
 };
 
 // Do not edit below this line
